@@ -1,3 +1,18 @@
+⚠️  DO NOT USE THIS FORK⚠️
+
+Okay, maybe use this fork. This fork applies [this
+patch](https://github.com/edwardspec/mediawiki-aws-s3/pull/65https://github.com/edwardspec/mediawiki-aws-s3/pull/65).
+That patch makes all images uploaded to S3 use the `public` ACL if the provider
+is Backblaze B2. If you run a wiki that has any kind of privacy controls, DON'T
+USE THIS FORK!
+
+If you run a wiki where all of the content should be public, AND you use B2 as
+your S3 provider, then maybe you can use this fork
+
+BUT YOU BETTER BE SURE!
+
+---
+
 Extension:AWS - https://www.mediawiki.org/wiki/Extension:AWS
 
 What it does: it stores images in Amazon S3 instead of the local directory.
